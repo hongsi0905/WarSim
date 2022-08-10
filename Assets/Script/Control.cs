@@ -26,7 +26,6 @@ public class Control : MonoBehaviour
         if (currentHealth <= 0)
         {
             speed = 0;
-            animator.SetTrigger("Death");
             Destroy(gameObject,1);
         }
 
@@ -50,6 +49,7 @@ public class Control : MonoBehaviour
                 if(animator.GetCurrentAnimatorStateInfo(0).normalizedTime - count >= 1)
                 {
                     count++;
+                    SoundManager.instance.Sound(2);
                     hit.transform.GetComponent<Control>().currentHealth -= attack;
                 }
             }

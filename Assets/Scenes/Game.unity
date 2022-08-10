@@ -139,6 +139,152 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d33c1a48e8a7194193c2e4e6a3dcd53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &47459894
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 47459895}
+  - component: {fileID: 47459897}
+  - component: {fileID: 47459896}
+  m_Layer: 0
+  m_Name: Sound Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &47459895
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 47459894}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &47459896
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 47459894}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &47459897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 47459894}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f228cec7317f1047a5451db9f192ffd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 47459896}
+  audioClip:
+  - {fileID: 8300000, guid: d071f30efb5243d45bfeb73ce2f4a0a5, type: 3}
+  - {fileID: 8300000, guid: c6449bed90fa5f24287efd471e24569d, type: 3}
+  - {fileID: 8300000, guid: 57e9845fd0022ff4a9b94555e15ab06c, type: 3}
 --- !u!1001 &64378427
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -150,6 +296,10 @@ PrefabInstance:
       propertyPath: product
       value: 
       objectReference: {fileID: 11400000, guid: 571d7e2d6b8a22c459da265f05bc4905, type: 2}
+    - target: {fileID: 1470059020099664644, guid: 280b6c50911d198408a190664525b385, type: 3}
+      propertyPath: createButton
+      value: 
+      objectReference: {fileID: 688628812}
     - target: {fileID: 7956058010546544897, guid: 280b6c50911d198408a190664525b385, type: 3}
       propertyPath: m_Type
       value: 1
@@ -184,12 +334,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7956058012044175940, guid: 280b6c50911d198408a190664525b385, type: 3}
       propertyPath: m_Type
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7956058012044175940, guid: 280b6c50911d198408a190664525b385, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 10917, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 7956058012044175940, guid: 280b6c50911d198408a190664525b385, type: 3}
+      propertyPath: m_FillMethod
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7956058012044175940, guid: 280b6c50911d198408a190664525b385, type: 3}
+      propertyPath: m_FillOrigin
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7956058012044175942, guid: 280b6c50911d198408a190664525b385, type: 3}
       propertyPath: m_Name
       value: Wizard Create Button
@@ -1288,6 +1446,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d33c1a48e8a7194193c2e4e6a3dcd53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &688628812 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7956058012044175946, guid: 280b6c50911d198408a190664525b385, type: 3}
+  m_PrefabInstance: {fileID: 64378427}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -1356,7 +1525,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 2
+  m_Lightmapping: 1
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -2518,6 +2687,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4135533477319584, guid: 89843090f5c38c24c9500fe9490ba5c4, type: 3}
   m_PrefabInstance: {fileID: 1180681292}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1216382544 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7956058012044175946, guid: 280b6c50911d198408a190664525b385, type: 3}
+  m_PrefabInstance: {fileID: 7956058012062313202}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1225322037
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3422,6 +3602,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7418191803825823894, guid: 84da0f2c4b515194aa774a418ec9c179, type: 3}
+      propertyPath: currentHealth
+      value: 700
+      objectReference: {fileID: 0}
     - target: {fileID: 7501997169847684865, guid: 84da0f2c4b515194aa774a418ec9c179, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -3959,7 +4143,7 @@ GameObject:
   - component: {fileID: 1927823542}
   - component: {fileID: 1927823541}
   m_Layer: 0
-  m_Name: DataManager
+  m_Name: Data Manager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4296,6 +4480,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1770722596}
     m_Modifications:
+    - target: {fileID: 1470059020099664644, guid: 280b6c50911d198408a190664525b385, type: 3}
+      propertyPath: createButton
+      value: 
+      objectReference: {fileID: 1216382544}
     - target: {fileID: 7956058010546544897, guid: 280b6c50911d198408a190664525b385, type: 3}
       propertyPath: m_Type
       value: 1
@@ -4330,12 +4518,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7956058012044175940, guid: 280b6c50911d198408a190664525b385, type: 3}
       propertyPath: m_Type
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7956058012044175940, guid: 280b6c50911d198408a190664525b385, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 10917, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 7956058012044175940, guid: 280b6c50911d198408a190664525b385, type: 3}
+      propertyPath: m_FillAmount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7956058012044175940, guid: 280b6c50911d198408a190664525b385, type: 3}
+      propertyPath: m_FillMethod
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7956058012044175940, guid: 280b6c50911d198408a190664525b385, type: 3}
+      propertyPath: m_FillOrigin
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7956058012044175942, guid: 280b6c50911d198408a190664525b385, type: 3}
       propertyPath: m_Name
       value: Goblin Create Button
