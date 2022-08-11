@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System;
 
 public class Create : MonoBehaviour
 {
@@ -37,6 +38,7 @@ public class Create : MonoBehaviour
 
     public void CreateUnit(int count)
     {
+        PopUpManager.Show("VICTORY", "Clear Time");
         SoundManager.instance.Sound(0);
         switch (count)
         {
