@@ -26,7 +26,7 @@ public class Control : MonoBehaviour
         if (currentHealth <= 0)
         {
             speed = 0;
-            Destroy(gameObject,1);
+            Destroy(gameObject, 1);
         }
 
         Gauge.value = (float)currentHealth / maxHealth;

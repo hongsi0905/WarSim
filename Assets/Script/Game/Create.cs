@@ -15,6 +15,8 @@ public class Create : MonoBehaviour
     [SerializeField] Text price;
     [SerializeField] Button createButton;
 
+    
+
     private void Start()
     {
         border.sprite = product.border;
@@ -24,21 +26,11 @@ public class Create : MonoBehaviour
         price.text = product.price.ToString() + " $";
     }
 
-    public void Update()
-    {
-        if (DataManager.instance.money < product.price)
-        {
-            createButton.interactable = false;
-        }
-        else
-        {
-            createButton.interactable = true;
-        }
-    }
+   
 
     public void CreateUnit(int count)
     {
-        PopUpManager.Show("VICTORY", "Clear Time");
+     
         SoundManager.instance.Sound(0);
         switch (count)
         {
@@ -67,7 +59,7 @@ public class Create : MonoBehaviour
                );
             DataManager.instance.Save();
         }
-        
+        DataManager.instance.Save();
     }
 
     public IEnumerator Wait(float timer)
